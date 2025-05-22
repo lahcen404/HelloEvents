@@ -1,5 +1,6 @@
 package com.helloevents.helloevents.config;
 
+import com.helloevents.helloevents.service.JwtService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -14,7 +15,9 @@ import java.io.IOException;
 @Component
 @RequiredArgsConstructor
 
-public class JwtAuthentificationFilter extends OncePerRequestFilter {
+public class JwtAuthenticationFilter extends OncePerRequestFilter {
+
+    private final JwtService jwtService;
 
     @Override
     protected void doFilterInternal(
@@ -23,6 +26,16 @@ public class JwtAuthentificationFilter extends OncePerRequestFilter {
         @NonNull FilterChain filterChain
     ) throws ServletException, IOException {
 
+        final String authHeader = request.getHeader("Authorization");
+        final String jwtToken;
+        final String userEmail;
 
+        if (authHeader == null ||authHeader.startsWith("Bearer ")){
+            filterChain.doFilter(request,response);
+            return;
+        }
+        // extract token
+        jwtToken = authHeader.substring(7);
+        userEmail = jwtService.extractUserEmail(jwtToken);
     }
 }
