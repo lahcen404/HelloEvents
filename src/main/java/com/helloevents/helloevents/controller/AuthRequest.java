@@ -1,43 +1,18 @@
 package com.helloevents.helloevents.controller;
 
-import jakarta.persistence.Column;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import com.helloevents.helloevents.model.Role;
-
 
 @Data
-@Builder
-@AllArgsConstructor
+//@Builder
+//@AllArgsConstructor
 @NoArgsConstructor
-public class RegisterRequest {
-    private String name;
+public class AuthRequest {
 
-    @Column(unique = true)
     private String email;
     private String password;
-    private Role role;
-
-    public Role getRole() {
-        return role;
-    }
-
-    public void setRole(Role role) {
-        this.role = role;
-    }
-
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String firstname) {
-        this.name = firstname;
-    }
-
-
 
     public String getEmail() {
         return email;
