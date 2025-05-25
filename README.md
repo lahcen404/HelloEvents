@@ -54,4 +54,16 @@ src/
 ├── mapper/           # Map DTOs to Entities and vice versa
 ├── security/         # JWT authentication & security config
 ```
+
+## UMLs 
+
+### USE CASE Diagram
+![image](https://github.com/user-attachments/assets/9559df54-89d6-4b98-929f-94e8a0e923d1)
+### CLASS Diagram
+![image](https://github.com/user-attachments/assets/7e424ee4-9bda-496e-acbc-2ae9c8b581c2)
+### SEQUENCE Diagram 
+![image](https://github.com/user-attachments/assets/af502496-194c-4a4d-9bd8-0cebd700df0f)
+
+
+
 ## [Postman Link](https://yguhijopl.postman.co/workspace/My-Workspace~49aab289-6de5-487b-8f91-58ce1aacf8db/collection/41299916-f7f0ba6a-faad-4f0b-b3e3-91bdd037c54d?action=share&creator=41299916)
