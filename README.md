@@ -54,4 +54,4 @@ src/
 ├── mapper/           # Map DTOs to Entities and vice versa
 ├── security/         # JWT authentication & security config
 ```
-
+## [Postman Link](https://yguhijopl.postman.co/workspace/My-Workspace~49aab289-6de5-487b-8f91-58ce1aacf8db/collection/41299916-f7f0ba6a-faad-4f0b-b3e3-91bdd037c54d?action=share&creator=41299916)
