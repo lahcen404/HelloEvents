@@ -71,7 +71,6 @@ public class User implements UserDetails {
         return true;
     }
 
-    // Keep these getters and setters if not fully handled by Lombok
     public Long getId() {
         return id;
     }

@@ -1,7 +1,9 @@
 package com.helloevents.helloevents.controller;
 
+import com.helloevents.helloevents.model.AuthRequest;
+import com.helloevents.helloevents.model.AuthResponse;
+import com.helloevents.helloevents.model.RegisterRequest;
 import com.helloevents.helloevents.service.AuthenticationService;
-import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

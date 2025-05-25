@@ -1,4 +1,4 @@
-package com.helloevents.helloevents.controller;
+package com.helloevents.helloevents.model;
 
 import lombok.*;
 

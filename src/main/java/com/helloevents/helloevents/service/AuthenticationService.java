@@ -1,11 +1,10 @@
 package com.helloevents.helloevents.service;
 
-import com.helloevents.helloevents.controller.AuthRequest;
-import com.helloevents.helloevents.controller.AuthResponse;
-import com.helloevents.helloevents.controller.RegisterRequest;
+import com.helloevents.helloevents.model.AuthRequest;
+import com.helloevents.helloevents.model.AuthResponse;
+import com.helloevents.helloevents.model.RegisterRequest;
 import com.helloevents.helloevents.model.User;
 import com.helloevents.helloevents.repository.UserRepository;
-import lombok.RequiredArgsConstructor;
 import com.helloevents.helloevents.model.Role;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.AuthenticationManager;
