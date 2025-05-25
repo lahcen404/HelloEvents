@@ -15,6 +15,7 @@ public class Event {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String title;
     private String description;
     private LocalDate date;
@@ -24,6 +25,9 @@ public class Event {
 
 @OneToMany(mappedBy = "event" , cascade = CascadeType.ALL)
     private List<Booking> bookings = new ArrayList<>();
+
+
+
 
     public Long getId() {
         return id;

@@ -19,6 +19,7 @@ public class EventService {
 
     //create
     public Event createEvent(Event event){
+        event.setId(null); //fix problem with give null to Id
         return eventRepository.save(event);
     }
 
@@ -47,7 +48,7 @@ public class EventService {
         event.setLocation(eventDetails.getLocation());
         event.setCategory(eventDetails.getCategory());
         event.setAvailableSeats(eventDetails.getAvailableSeats());
-        eventDetails.setBookings(eventDetails.getBookings());
+//        event.setBookings(eventDetails.getBookings());
 
 
         return eventRepository.save(event);
