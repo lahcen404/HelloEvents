@@ -1,6 +1,8 @@
 package com.helloevents.helloevents.model;
 
 import jakarta.persistence.Column;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -17,6 +19,7 @@ public class RegisterRequest {
     @Column(unique = true)
     private String email;
     private String password;
+    @Enumerated(EnumType.STRING)
     private Role role;
 
     public Role getRole() {

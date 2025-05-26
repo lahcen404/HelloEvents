@@ -19,7 +19,7 @@ public class EventService {
 
     //create
     public Event createEvent(Event event){
-        event.setId(null); //fix problem with give null to Id
+      //  event.setId(null); //fix problem with give null to Id
         return eventRepository.save(event);
     }
 
@@ -33,6 +33,9 @@ public class EventService {
         return eventRepository.findById(id);
     }
 
+    public Long getCountByEventName(Event event){
+        return eventRepository.countBookingByEventName(event.getTitle());
+    }
     //delete
     public void deleteEvent(Long id){
         eventRepository.deleteById(id);

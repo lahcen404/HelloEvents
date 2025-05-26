@@ -40,7 +40,7 @@ public class AuthenticationService {
         user.setName(request.getName());
         user.setEmail(request.getEmail());
         user.setPassword(passwordEncoder.encode(request.getPassword()));
-        user.setRole(request.getRole() != null ? request.getRole() : Role.COSTUMER);
+        user.setRole(request.getRole() );
         repository.save(user);
         var jwtToken = jwtService.generateToken(new HashMap<>(), user);
         AuthResponse response = new AuthResponse();
@@ -58,7 +58,7 @@ public class AuthenticationService {
 
         var user = repository.findByEmail(request.getEmail()).orElseThrow();
 
-        var jwtToken = jwtService.generateToken(new HashMap<>(), user);
+        String jwtToken = jwtService.generateToken(user);
 
         AuthResponse response = new AuthResponse();
         response.setToken(jwtToken);
