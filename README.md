@@ -5,7 +5,7 @@
 
 ## 📌 Overview
 
-**HelloEvents** is a full-featured Spring Boot web application built for managing and booking event tickets. Designed to be intuitive and responsive, this app allows users to register, explore events, and book tickets with ease. Administrators can manage users, events, and monitor platform activity through a secure dashboard.
+**HelloEvents** is a full-featured web application built with **Spring Boot** and **Angular** for managing and booking event tickets. Designed to be intuitive, responsive, and scalable, this app allows users to register, explore events, and book tickets with ease. Administrators can manage users, events, and monitor platform activity through a secure dashboard.
 
 ---
 
@@ -30,22 +30,24 @@
 
 ## 🧰 Technologies Used
 
-| Category            | Tools / Frameworks      |
-| ------------------- | ----------------------- |
-| **Backend**         | Spring Boot, Spring MVC |
-| **Security**        | Spring Security (JWT)   |
-| **Persistence**     | Spring Data JPA         |
-| **Database**        | MySQL / PostgreSQL      |
-| **Testing**         | JUnit                   |
-| **Build Tool**      | Maven                   |
-| **Version Control** | Git, GitHub             |
+| Category             | Tools / Frameworks                      |
+| -------------------- |-----------------------------------------|
+| **Frontend**         | Angular 17, Angular Material            |
+| **Backend**          | Spring Boot, Spring MVC                 |
+| **Security**         | Spring Security (JWT)                   |
+| **Persistence**      | Spring Data JPA                         |
+| **Database**         | MySQL / PostgreSQL                      |
+| **Testing**          | JUnit                                   |
+| **Containerization** | Docker                                  |
+| **Build Tools**      | Maven (Backend), Angular CLI (Frontend) |
+| **Version Control**  | Git, GitHub                             |
 
 ---
 
 ## 🗂️ Project Structure
 
 ```
-src/
+backend/
 ├── controller/       # REST Controllers (API endpoints)
 ├── model/            # JPA Entities (Event, User, Booking, etc.)
 ├── repository/       # JPA Repositories (data access)
@@ -53,7 +55,32 @@ src/
 ├── dto/              # Data Transfer Objects
 ├── mapper/           # Map DTOs to Entities and vice versa
 ├── security/         # JWT authentication & security config
+├── tests/            # Unit and integration tests (JUnit)
+
+frontend/
+├── src/
+│   ├── app/
+│   │   ├── components/      # Reusable Angular components
+│   │   ├── pages/           # Views (Home, Events, Profile, etc.)
+│   │   ├── services/        # API communication
+│   │   ├── guards/          # Route guards for authentication
+│   │   └── material.module.ts # Angular Material modules
+│   ├── assets/              # Static assets
+│   └── environments/        # Environment config
 ```
+
+---
+
+## 📦 Docker Support
+
+* **Dockerfile** for both frontend and backend
+* **docker-compose.yml** to orchestrate:
+
+    * Spring Boot API
+    * Angular frontend
+    * MySQL/PostgreSQL database
+
+    
 
 ## UMLs 
 
@@ -66,4 +93,7 @@ src/
 
 
 
-## [Postman Link](https://yguhijopl.postman.co/workspace/My-Workspace~49aab289-6de5-487b-8f91-58ce1aacf8db/collection/41299916-f7f0ba6a-faad-4f0b-b3e3-91bdd037c54d?action=share&creator=41299916)
+
+## 🔗 API Testing
+
+* Test and explore APIs using **Postman**: [Postman Link](https://yguhijopl.postman.co/workspace/My-Workspace~49aab289-6de5-487b-8f91-58ce1aacf8db/collection/41299916-f7f0ba6a-faad-4f0b-b3e3-91bdd037c54d?action=share&creator=41299916)
