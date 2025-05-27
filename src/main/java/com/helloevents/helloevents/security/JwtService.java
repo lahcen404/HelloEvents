@@ -1,4 +1,4 @@
-package com.helloevents.helloevents.service;
+package com.helloevents.helloevents.security;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

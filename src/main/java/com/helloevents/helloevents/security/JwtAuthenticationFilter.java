@@ -1,6 +1,5 @@
 package com.helloevents.helloevents.security;
 
-import com.helloevents.helloevents.service.JwtService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

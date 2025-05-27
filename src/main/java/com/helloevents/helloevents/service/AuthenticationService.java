@@ -1,11 +1,11 @@
 package com.helloevents.helloevents.service;
 
+import com.helloevents.helloevents.dto.LoginRequest;
 import com.helloevents.helloevents.model.AuthRequest;
 import com.helloevents.helloevents.model.AuthResponse;
-import com.helloevents.helloevents.model.RegisterRequest;
 import com.helloevents.helloevents.model.User;
 import com.helloevents.helloevents.repository.UserRepository;
-import com.helloevents.helloevents.model.Role;
+import com.helloevents.helloevents.security.JwtService;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -32,7 +32,7 @@ public class AuthenticationService {
     private final JwtService jwtService;
     private final AuthenticationManager manager;
 
-    public AuthResponse register(RegisterRequest request) {
+    public AuthResponse register(LoginRequest.RegisterRequest request) {
         if (repository.findByEmail(request.getEmail()).isPresent()) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Email already exists");
         }
