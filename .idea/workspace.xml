@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e9429dd6-36f9-450c-8a6a-69d568a81a43" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/helloevents/helloevents/HelloeventsApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/helloevents/helloevents/config/ApplicationConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/helloevents/helloevents/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/helloevents/helloevents/controller/AuthController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/helloevents/helloevents/controller/EventController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/helloevents/helloevents/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/helloevents/helloevents/dto/BookingDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/helloevents/helloevents/dto/EventDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/helloevents/helloevents/dto/LoginRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/helloevents/helloevents/dto/UserDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/helloevents/helloevents/mapper/EventMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/helloevents/helloevents/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/helloevents/helloevents/model/AuthRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/helloevents/helloevents/model/AuthResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/helloevents/helloevents/model/Booking.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/helloevents/helloevents/model/Event.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/helloevents/helloevents/model/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/helloevents/helloevents/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/helloevents/helloevents/repository/BookingRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/helloevents/helloevents/repository/EventRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/helloevents/helloevents/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/helloevents/helloevents/security/JwtAuthenticationFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/helloevents/helloevents/security/JwtService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/helloevents/helloevents/service/AuthenticationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/helloevents/helloevents/service/EventService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/helloevents/helloevents/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/helloevents/helloevents/HelloeventsApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2xdG0V8Sk4hzw84aUMdbLE9e3Fx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.HelloeventsApplicationTests.contextLoads.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HelloeventsApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HelloeventsApplicationTests.testLoginInvalidCredentials.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HelloeventsApplicationTests.testLoginValidCredentials.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.helloevents [clean].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.HelloeventsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ENAA/OneDrive/Desktop/ENAA/Spring Boot/HelloEvents&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Spring Boot.HelloeventsApplication">
+    <configuration name="HelloeventsApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="helloevents" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.helloevents.helloevents.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.helloevents.helloevents" />
+      <option name="MAIN_CLASS_NAME" value="com.helloevents.helloevents.HelloeventsApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloeventsApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="helloevents" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.helloevents.helloevents.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.helloevents.helloevents" />
+      <option name="MAIN_CLASS_NAME" value="com.helloevents.helloevents.HelloeventsApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloeventsApplicationTests.testLoginInvalidCredentials" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="helloevents" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.helloevents.helloevents.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.helloevents.helloevents" />
+      <option name="MAIN_CLASS_NAME" value="com.helloevents.helloevents.HelloeventsApplicationTests" />
+      <option name="METHOD_NAME" value="testLoginInvalidCredentials" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloeventsApplicationTests.testLoginValidCredentials" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="helloevents" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.helloevents.helloevents.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.helloevents.helloevents" />
+      <option name="MAIN_CLASS_NAME" value="com.helloevents.helloevents.HelloeventsApplicationTests" />
+      <option name="METHOD_NAME" value="testLoginValidCredentials" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloeventsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <envs>
+        <env name="MYSQL_USERNAME" value="root" />
+        <env name="MYSQL_PASSWORD" value="root" />
+        <env name="JWT_SECRET" value="ae879b5aeb57ffeb85710bdff389fd2e60b563bd82cdc289f67d6170f2683cca3f3a572e767677c95d120782f99a5fdc124b4f598409e96a37270946b316383b42284420800e3d7445f3985456845348faeb06d02c155e8510f08b7806f0cdbbfc1084f66d2f154089bbdfcaa49a536a44db3398ab3bad4137b778ccd26b96c0cda51e5b9dcfb0f7e2f289f3b4221622b39abd8c9ab18eee3aa90eae4a9704372528d2570b25de0049f137beff4879a38ef966de809264f1fabdad4c5f7ac45b58de29cc58261e0e9ecbcf739335015d9366824c50e3055fce1a1f3f7967db0e189a47267b5874139f6e2bfc30554e315e6e98d6feef511f03934ac2abc68493" />
+      </envs>
+      <module name="helloevents" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.helloevents.helloevents.HelloeventsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.HelloeventsApplicationTests" />
+      <item itemvalue="JUnit.HelloeventsApplicationTests.contextLoads" />
+      <item itemvalue="JUnit.HelloeventsApplicationTests.testLoginInvalidCredentials" />
+      <item itemvalue="JUnit.HelloeventsApplicationTests.testLoginValidCredentials" />
+      <item itemvalue="Spring Boot.HelloeventsApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.HelloeventsApplicationTests" />
+        <item itemvalue="JUnit.HelloeventsApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.HelloeventsApplicationTests.testLoginValidCredentials" />
+        <item itemvalue="JUnit.HelloeventsApplicationTests.testLoginInvalidCredentials" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e9429dd6-36f9-450c-8a6a-69d568a81a43" name="Changes" comment="" />
+      <created>1748260313733</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748260313733</updated>
+      <workItem from="1748260315038" duration="606000" />
+      <workItem from="1748265588756" duration="10973000" />
+      <workItem from="1748339833652" duration="1750000" />
+      <workItem from="1748356332791" duration="602000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
