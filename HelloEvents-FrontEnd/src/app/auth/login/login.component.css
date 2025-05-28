@@ -1,0 +1,30 @@
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #e3f2fd, #90caf9);
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+mat-card-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+mat-card-subtitle {
+  font-size: 14px;
+  color: #757575;
+}
