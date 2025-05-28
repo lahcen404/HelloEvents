@@ -11,6 +11,9 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
+import { Router } from '@angular/router';
+import { AuthService } from '../auth.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-login',
@@ -23,6 +26,7 @@ import { MatCardModule } from '@angular/material/card';
     MatButtonModule,
     MatIconModule,
     MatCardModule,
+    HttpClientModule,
   ],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss'],
@@ -30,8 +34,13 @@ import { MatCardModule } from '@angular/material/card';
 export class LoginComponent {
   loginForm: FormGroup;
   hide = signal(true);
+  loginError: string | null = null; // ✅ to show error message
 
-  constructor(private fb: FormBuilder) {
+  constructor(
+    private fb: FormBuilder,
+    private auth: AuthService,
+    private router: Router
+  ) {
     this.loginForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
       password: ['', Validators.required],
@@ -39,11 +48,24 @@ export class LoginComponent {
   }
 
   onSubmit(): void {
-    if (this.loginForm.valid) {
-      const { email, password } = this.loginForm.value;
-      console.log('Logging in with:', email, password);
-      // Handle login logic
+    this.loginError = null; // clear previous error
+
+    if (this.loginForm.invalid) {
+      return;
     }
+
+    const { email, password } = this.loginForm.value;
+
+    this.auth.login({ email, password }).subscribe({
+      next: (res) => {
+        this.auth.saveAuth(res);
+        this.router.navigate(['/home']);
+      },
+      error: (err) => {
+        console.error('Login failed', err);
+        this.loginError = 'Invalid email or password. Please try again.';
+      },
+    });
   }
 
   togglePassword(event: MouseEvent) {
