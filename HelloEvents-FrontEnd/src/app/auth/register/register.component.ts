@@ -15,9 +15,8 @@ import {MatSelect} from "@angular/material/select";
     FormsModule,
     MatFormField,
     MatInput,
-    MatOption,
     MatButton,
-    MatSelect,
+
     MatLabel
   ],
   templateUrl: './register.component.html'

@@ -7,22 +7,11 @@
     <list default="true" id="e9429dd6-36f9-450c-8a6a-69d568a81a43" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/java/com/helloevents/helloevents/controller/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/java/com/helloevents/helloevents/controller/EventController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/app.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/auth/auth.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/services/auth/auth.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/auth/auth.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/services/auth/auth.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/services/auth/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/auth/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/auth/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/java/com/helloevents/helloevents/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/java/com/helloevents/helloevents/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/auth/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/auth/register/register.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/auth/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/auth/register/register.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/home/home.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/services/auth.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/services/auth.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/services/event.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/services/event.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/shared/components/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/shared/components/navbar/navbar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/services/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/services/auth/auth.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +65,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable",
     "ts.external.directory.path": "C:\\Users\\ENAA\\OneDrive\\Desktop\\ENAA\\Spring Boot\\HelloEvents\\HelloEvents-FrontEnd\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
@@ -191,7 +183,7 @@
       <workItem from="1748260315038" duration="606000" />
       <workItem from="1748265588756" duration="10973000" />
       <workItem from="1748339833652" duration="1750000" />
-      <workItem from="1748356332791" duration="43377000" />
+      <workItem from="1748356332791" duration="46198000" />
     </task>
     <servers />
   </component>

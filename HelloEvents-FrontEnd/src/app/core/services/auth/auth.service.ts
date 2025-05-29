@@ -4,7 +4,7 @@ import {Observable} from "rxjs";
 
 export interface AuthResponse {
   token: string;
-  role: 'ADMIN' | 'COSTUMER';
+  role: 'ADMIN' | 'CUSTOMER';
 }
 
 export interface LoginRequest {
@@ -16,7 +16,7 @@ export interface RegisterRequest {
   name: string;
   email: string;
   password: string;
-  role: string; // for role selection
+  role: 'CUSTOMER'; // for role selection
 }
 
 @Injectable({
@@ -27,7 +27,7 @@ export class AuthService {
   private TOKEN_KEY = 'auth-token';
   constructor(private http: HttpClient) { }
 
-  register(data: RegisterRequest): Observable<AuthResponse> {
+  register(data: { password: string; role: string; name: string; email: string }): Observable<AuthResponse> {
     return this.http.post<AuthResponse>(`${this.apiUrl}/register`, data);
   }
 
@@ -45,8 +45,8 @@ export class AuthService {
     return localStorage.getItem(this.TOKEN_KEY);
   }
 
-  getRole(): 'ADMIN' | 'COSTUMER' | null {
-    return localStorage.getItem('role') as 'ADMIN' | 'COSTUMER' | null;
+  getRole(): 'ADMIN' | 'CUSTOMER' | null {
+    return localStorage.getItem('role') as 'ADMIN' | 'CUSTOMER' | null;
   }
 
   logout() {
