@@ -24,7 +24,7 @@ export interface RegisterRequest {
 })
 export class AuthService {
   private apiUrl = 'http://localhost:8080/api/v1/auth';
-
+  private TOKEN_KEY = 'auth-token';
   constructor(private http: HttpClient) { }
 
   register(data: RegisterRequest): Observable<AuthResponse> {
@@ -42,7 +42,7 @@ export class AuthService {
   }
 
   getToken(): string | null {
-    return localStorage.getItem('token');
+    return localStorage.getItem(this.TOKEN_KEY);
   }
 
   getRole(): 'ADMIN' | 'COSTUMER' | null {
@@ -50,10 +50,18 @@ export class AuthService {
   }
 
   logout() {
-    localStorage.clear();
+    localStorage.removeItem(this.TOKEN_KEY);
+  }
+
+  saveToken(token: string) {
+    localStorage.setItem(this.TOKEN_KEY, token);
   }
 
   isAdmin(): boolean {
     return this.getRole() === 'ADMIN';
+  }
+
+  isLoggedIn(): boolean {
+    return !!this.getToken();
   }
 }

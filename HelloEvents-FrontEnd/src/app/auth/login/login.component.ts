@@ -12,7 +12,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { Router } from '@angular/router';
-import { AuthService } from '../auth.service';
+import { AuthService } from '../../core/services/auth/auth.service';
 import { HttpClientModule } from '@angular/common/http';
 
 @Component({
@@ -61,6 +61,9 @@ export class LoginComponent {
         this.auth.saveAuth(res);
         this.router.navigate(['/home']);
         console.log("Logiin dooone")
+        this.auth.saveToken(res.token);
+        console.log('Token howa : ', res.token);
+
       },
       error: (err) => {
         console.error('Login failed', err);
