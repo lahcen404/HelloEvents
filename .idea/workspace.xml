@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e9429dd6-36f9-450c-8a6a-69d568a81a43" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/java/com/helloevents/helloevents/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/java/com/helloevents/helloevents/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +184,7 @@
       <workItem from="1748260315038" duration="606000" />
       <workItem from="1748265588756" duration="10973000" />
       <workItem from="1748339833652" duration="1750000" />
-      <workItem from="1748356332791" duration="49708000" />
+      <workItem from="1748356332791" duration="50732000" />
     </task>
     <servers />
   </component>
