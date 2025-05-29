@@ -16,7 +16,7 @@ export interface RegisterRequest {
   name: string;
   email: string;
   password: string;
-  role: 'ADMIN' | 'COSTUMER'; // for role selection
+  role: string; // for role selection
 }
 
 @Injectable({
@@ -27,7 +27,7 @@ export class AuthService {
 
   constructor(private http: HttpClient) { }
 
-  register(data: { password: string; role: string; name: string; email: string }): Observable<AuthResponse> {
+  register(data: RegisterRequest): Observable<AuthResponse> {
     return this.http.post<AuthResponse>(`${this.apiUrl}/register`, data);
   }
 

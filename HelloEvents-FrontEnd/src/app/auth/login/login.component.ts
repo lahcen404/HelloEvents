@@ -34,7 +34,7 @@ import { HttpClientModule } from '@angular/common/http';
 export class LoginComponent {
   loginForm: FormGroup;
   hide = signal(true);
-  loginError: string | null = null; // ✅ to show error message
+  loginError: string | null = null;
 
   constructor(
     private fb: FormBuilder,
@@ -60,6 +60,7 @@ export class LoginComponent {
       next: (res) => {
         this.auth.saveAuth(res);
         this.router.navigate(['/home']);
+        console.log("Logiin dooone")
       },
       error: (err) => {
         console.error('Login failed', err);
