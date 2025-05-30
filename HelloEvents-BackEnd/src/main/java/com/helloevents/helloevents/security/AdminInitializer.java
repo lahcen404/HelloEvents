@@ -17,7 +17,7 @@ public class AdminInitializer {
                 User admin = new User();
                 admin.setName("Admin");
                 admin.setEmail("lahcen.maskour2003@gmail.com");
-                admin.setPassword(passwordEncoder.encode("admin123")); // secure this in production
+                admin.setPassword(passwordEncoder.encode("admin123"));
                 admin.setRole(Role.ADMIN);
 
                 userRepository.save(admin);

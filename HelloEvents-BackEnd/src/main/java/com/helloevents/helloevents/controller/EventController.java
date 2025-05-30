@@ -41,7 +41,7 @@ public class EventController {
          eventService.deleteEvent(id);
     }
 
-    @PreAuthorize("hasAnyRole('ADMIN','CUSTOMER')")
+    @PreAuthorize("hasAnyAuthority('ADMIN','CUSTOMER')")
     @GetMapping
     public List<Event> getAllEvents(){
         return eventService.getAllEvents();

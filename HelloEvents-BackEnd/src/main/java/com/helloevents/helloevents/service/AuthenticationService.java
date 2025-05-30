@@ -45,6 +45,7 @@ public class AuthenticationService {
         var jwtToken = jwtService.generateToken(new HashMap<>(), user);
         AuthResponse response = new AuthResponse();
         response.setToken(jwtToken);
+        response.setRole(user.getRole().name());
         return response;
     }
 
@@ -62,6 +63,7 @@ public class AuthenticationService {
 
         AuthResponse response = new AuthResponse();
         response.setToken(jwtToken);
+        response.setRole(user.getRole().name());
 
         return response;
     }

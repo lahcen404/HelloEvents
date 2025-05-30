@@ -6,6 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="e9429dd6-36f9-450c-8a6a-69d568a81a43" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/java/com/helloevents/helloevents/controller/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/java/com/helloevents/helloevents/controller/EventController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/java/com/helloevents/helloevents/model/AuthResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/java/com/helloevents/helloevents/model/AuthResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/java/com/helloevents/helloevents/security/AdminInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/java/com/helloevents/helloevents/security/AdminInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/java/com/helloevents/helloevents/service/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/java/com/helloevents/helloevents/service/AuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/event/event-card/event-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/event/event-card/event-card.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/event/event-card/event-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/event/event-card/event-card.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/event/event-list/event-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/event/event-list/event-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/guards/auth.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/guards/auth.guard.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/services/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/services/auth/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/interceptor/auth.interceptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/interceptor/auth.interceptor.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/main.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +199,7 @@
       <workItem from="1748260315038" duration="606000" />
       <workItem from="1748265588756" duration="10973000" />
       <workItem from="1748339833652" duration="1750000" />
-      <workItem from="1748356332791" duration="50732000" />
+      <workItem from="1748356332791" duration="60895000" />
     </task>
     <servers />
   </component>

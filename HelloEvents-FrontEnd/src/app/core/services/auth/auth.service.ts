@@ -37,7 +37,8 @@ export class AuthService {
   }
 
   saveAuth(res: AuthResponse) {
-    localStorage.setItem('token', res.token);
+    console.log('Saved role:', res.role);
+    this.saveToken(res.token);
     localStorage.setItem('role', res.role);
   }
 
@@ -51,6 +52,7 @@ export class AuthService {
 
   logout() {
     localStorage.removeItem(this.TOKEN_KEY);
+    localStorage.removeItem('role');
   }
 
   saveToken(token: string) {
