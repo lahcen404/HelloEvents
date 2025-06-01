@@ -2,13 +2,15 @@ import {Component, OnInit} from '@angular/core';
 import {AppEvent, EventService} from "../../services/event/event.service";
 import {EventCardComponent} from "../event-card/event-card.component";
 import {NgForOf, NgStyle} from "@angular/common";
+import {SidebarComponent} from "../../../shared/components/sidebar/sidebar.component";
 
 @Component({
   selector: 'app-event-list',
   standalone: true,
   imports: [
     EventCardComponent,
-    NgForOf
+    NgForOf,
+
   ],
   templateUrl: './event-list.component.html',
   styleUrl: './event-list.component.css'

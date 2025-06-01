@@ -18,13 +18,13 @@ public class EventController {
         this.eventService = eventService;
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAuthority('ADMIN')")
     @PostMapping
     public Event createEvent( @RequestBody Event event){
         return eventService.createEvent(event);
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAuthority('ADMIN')")
     @PutMapping("/{id}")
     public Event updateEvent(@PathVariable Long id, @RequestBody Event event){
        return eventService.updateevent(id,event);
@@ -35,7 +35,7 @@ public class EventController {
         return eventService.getCountByEventName(event);
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAuthority('ADMIN')")
     @DeleteMapping("{id}")
     public void deleteEvent(@PathVariable Long id){
          eventService.deleteEvent(id);

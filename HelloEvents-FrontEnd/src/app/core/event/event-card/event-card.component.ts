@@ -6,6 +6,7 @@ import {NgStyle} from "@angular/common";
   selector: 'app-event-card',
   templateUrl: './event-card.component.html',
   imports: [
+    NgStyle
   ],
   standalone: true
 })
