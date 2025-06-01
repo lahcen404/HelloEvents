@@ -2,12 +2,25 @@
   <div class="logo">EventPulse</div>
 
   <ul class="nav-links"> <li><a routerLink="/explore">Explore</a></li>
-    <li><a routerLink="/events">Events</a></li>
+    <li class="relative group">
+      <a class="cursor-pointer text-white">Events ▾</a>
+
+      <ul class="absolute left-0 hidden group-hover:block bg-gray-800 text-white shadow-lg rounded mt-2 w-44 z-50">
+        <li>
+          <a routerLink="/events" class="block px-4 py-2 hover:bg-gray-700">View Events</a>
+        </li>
+        <li *ngIf="authService.getRole() === 'ADMIN'">
+          <a routerLink="/add-event" class="block px-4 py-2 hover:bg-gray-700">Add Event</a>
+        </li>
+      </ul>
+    </li>
 
     <li *ngIf="authService.isLoggedIn()">
       <a *ngIf="authService.getRole() === 'CUSTOMER'" routerLink="/customer-profile">Customer Profile</a>
       <a *ngIf="authService.getRole() === 'ADMIN'" routerLink="/admin-profile">Admin Profile</a>
     </li>
+
+
 
     <li *ngIf="!authService.isLoggedIn()">
       <a routerLink="/login">Login</a>

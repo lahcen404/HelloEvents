@@ -5,25 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9429dd6-36f9-450c-8a6a-69d568a81a43" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/HelloEvents-BackEnd/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/nginx.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/java/com/helloevents/helloevents/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/java/com/helloevents/helloevents/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/java/com/helloevents/helloevents/controller/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/java/com/helloevents/helloevents/controller/EventController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloEvents-BackEnd/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-BackEnd/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/app.routes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/event/event-card/event-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/event/event-card/event-card.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/event/event-card/event-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/event/event-card/event-card.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/event/event-list/event-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/event/event-list/event-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/event/event-list/event-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/event/event-list/event-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/interceptor/auth.interceptor.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/interceptor/auth.interceptor.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/services/event/event.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/services/event/event.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/shared/components/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/shared/components/navbar/navbar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/shared/components/navbar/navbar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/shared/components/navbar/navbar.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/shared/components/sidebar/sidebar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/shared/components/sidebar/sidebar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/shared/components/sidebar/sidebar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/shared/components/sidebar/sidebar.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +62,7 @@
     "JUnit.HelloeventsApplicationTests.testLoginValidCredentials.executor": "Run",
     "Maven.helloevents [clean].executor": "Run",
     "Maven.helloevents [install].executor": "Run",
+    "Maven.helloevents [package].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -205,7 +196,7 @@
       <workItem from="1748260315038" duration="606000" />
       <workItem from="1748265588756" duration="10973000" />
       <workItem from="1748339833652" duration="1750000" />
-      <workItem from="1748356332791" duration="79856000" />
+      <workItem from="1748356332791" duration="85611000" />
     </task>
     <servers />
   </component>

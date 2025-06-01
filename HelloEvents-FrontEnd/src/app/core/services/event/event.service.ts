@@ -22,4 +22,9 @@ private apiUrl = "http://localhost:8080/api/v1/events"
   getAllEvents(): Observable<AppEvent[]>{
   return this.http.get<AppEvent[]>(this.apiUrl)
   }
+
+  addEvent(event: Event): Observable<Event>{
+  return this.http.post<Event>(this.apiUrl,event)
+  }
+
 }
