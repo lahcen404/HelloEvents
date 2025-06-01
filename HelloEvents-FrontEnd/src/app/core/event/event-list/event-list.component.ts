@@ -21,9 +21,17 @@ export class EventListComponent implements OnInit {
   constructor(private eventService: EventService) {}
 
   ngOnInit(): void {
+    this.loadEvents();
+  }
+
+  loadEvents() {
     this.eventService.getAllEvents().subscribe(data => {
       this.events = data;
-      console.log("data",data)
+      console.log("data", data);
     });
+  }
+
+  onEventDeleted(deletedId: number) {
+    this.events = this.events.filter(event => event.id !== deletedId);
   }
 }

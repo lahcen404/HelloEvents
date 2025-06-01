@@ -1,141 +1,161 @@
 <div class="min-h-screen bg-gradient-to-br from-gray-900 to-indigo-950 py-12 px-4 sm:px-6 lg:px-8">
   <div class="max-w-3xl mx-auto">
-    <div class="bg-gray-800/50 backdrop-blur-xl rounded-3xl shadow-2xl p-8 space-y-10 border border-gray-700/50">
+    <div
+      class="bg-gray-800/60 backdrop-blur-xl rounded-3xl shadow-2xl p-10 space-y-10 border border-gray-700/50"
+    >
       <form [formGroup]="eventForm" (ngSubmit)="onSubmit()" class="space-y-8">
-        <!-- Header Section -->
-        <div class="text-center space-y-3">
-          <h2 class="text-4xl font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600 bg-clip-text text-transparent">
-            Create New Event
+
+        <div class="text-center space-y-4">
+          <h2
+            class="text-4xl font-extrabold bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600 bg-clip-text text-transparent"
+          >
+            {{ isEditMode ? 'Edit Event' : 'Create New Event' }}
           </h2>
-          <p class="text-gray-400">Fill in the details to create your amazing event</p>
+          <p class="text-gray-400 text-lg">
+            {{ isEditMode ? 'Update your event details below' : 'Fill in the details to create your amazing event' }}
+          </p>
         </div>
 
-        <!-- Title Input -->
-        <div class="space-y-3">
-          <label for="title" class="block text-lg font-medium text-gray-200">
-            Event Title
-            <span class="text-pink-500 ml-1">*</span>
+        <!-- Title -->
+        <div>
+          <label for="title" class="block mb-2 text-lg font-semibold text-gray-200">
+            Event Title <span class="text-pink-500">*</span>
           </label>
           <input
             type="text"
             id="title"
             formControlName="title"
             placeholder="Enter a catchy title"
-            class="w-full h-14 px-5 rounded-xl bg-gray-700/40 border-2 border-gray-600 text-white text-lg placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/50 transition-all duration-300"
-            [ngClass]="{'border-red-500/50 focus:border-red-500 focus:ring-red-500/50': eventForm.get('title')?.invalid && eventForm.get('title')?.touched}"
-            required>
+            class="w-full h-14 px-5 rounded-xl bg-gray-700/50 border border-gray-600 text-white text-lg placeholder-gray-400
+              focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500 transition duration-300
+              disabled:opacity-50"
+            [ngClass]="{
+              'border-red-500 focus:border-red-600 focus:ring-red-500': eventForm.get('title')?.invalid && eventForm.get('title')?.touched
+            }"
+            required
+          />
         </div>
 
-        <!-- Description Input -->
-        <div class="space-y-3">
-          <label for="description" class="block text-lg font-medium text-gray-200">
-            Description
-            <span class="text-pink-500 ml-1">*</span>
+        <!-- Description -->
+        <div>
+          <label for="description" class="block mb-2 text-lg font-semibold text-gray-200">
+            Description <span class="text-pink-500">*</span>
           </label>
           <textarea
             id="description"
             formControlName="description"
             rows="4"
             placeholder="Describe your event in detail"
-            class="w-full px-5 py-4 rounded-xl bg-gray-700/40 border-2 border-gray-600 text-white text-lg placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/50 transition-all duration-300 resize-none"
-            [ngClass]="{'border-red-500/50 focus:border-red-500 focus:ring-red-500/50': eventForm.get('description')?.invalid && eventForm.get('description')?.touched}"
-            required></textarea>
+            class="w-full px-5 py-4 rounded-xl bg-gray-700/50 border border-gray-600 text-white text-lg placeholder-gray-400 resize-none
+              focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500 transition duration-300
+              disabled:opacity-50"
+            [ngClass]="{
+              'border-red-500 focus:border-red-600 focus:ring-red-500': eventForm.get('description')?.invalid && eventForm.get('description')?.touched
+            }"
+            required
+          ></textarea>
         </div>
 
-        <!-- Two Column Layout for Date and Location -->
+        <!-- Date and Location -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <!-- Date Input -->
-          <div class="space-y-3">
-            <label for="date" class="block text-lg font-medium text-gray-200">
-              Event Date & Time
-              <span class="text-pink-500 ml-1">*</span>
+          <div>
+            <label for="date" class="block mb-2 text-lg font-semibold text-gray-200">
+              Event Date <span class="text-pink-500">*</span>
             </label>
             <input
-              type="datetime-local"
+              type="date"
               id="date"
               formControlName="date"
-              class="w-full h-14 px-5 rounded-xl bg-gray-700/40 border-2 border-gray-600 text-white text-lg focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/50 transition-all duration-300"
-              [ngClass]="{'border-red-500/50 focus:border-red-500 focus:ring-red-500/50': eventForm.get('date')?.invalid && eventForm.get('date')?.touched}"
-              required>
+              class="w-full h-14 px-5 rounded-xl bg-gray-700/50 border border-gray-600 text-white text-lg
+                focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500 transition duration-300
+                disabled:opacity-50"
+              [ngClass]="{
+                'border-red-500 focus:border-red-600 focus:ring-red-500': eventForm.get('date')?.invalid && eventForm.get('date')?.touched
+              }"
+              required
+            />
           </div>
 
-          <!-- Location Input -->
-          <div class="space-y-3">
-            <label for="location" class="block text-lg font-medium text-gray-200">
-              Location
-              <span class="text-pink-500 ml-1">*</span>
+          <div>
+            <label for="location" class="block mb-2 text-lg font-semibold text-gray-200">
+              Location <span class="text-pink-500">*</span>
             </label>
             <input
               type="text"
               id="location"
               formControlName="location"
               placeholder="Event venue"
-              class="w-full h-14 px-5 rounded-xl bg-gray-700/40 border-2 border-gray-600 text-white text-lg placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/50 transition-all duration-300"
-              [ngClass]="{'border-red-500/50 focus:border-red-500 focus:ring-red-500/50': eventForm.get('location')?.invalid && eventForm.get('location')?.touched}"
-              required>
+              class="w-full h-14 px-5 rounded-xl bg-gray-700/50 border border-gray-600 text-white text-lg placeholder-gray-400
+                focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500 transition duration-300
+                disabled:opacity-50"
+              [ngClass]="{
+                'border-red-500 focus:border-red-600 focus:ring-red-500': eventForm.get('location')?.invalid && eventForm.get('location')?.touched
+              }"
+              required
+            />
           </div>
         </div>
 
-        <!-- Two Column Layout for Category and Seats -->
+        <!-- Category and Available Seats -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <!-- Category Select -->
-          <div class="space-y-3">
-            <label for="category" class="block text-lg font-medium text-gray-200">
-              Category
-              <span class="text-pink-500 ml-1">*</span>
+          <div>
+            <label for="category" class="block mb-2 text-lg font-semibold text-gray-200">
+              Category <span class="text-pink-500">*</span>
             </label>
-            <div class="relative">
-              <select
-                id="category"
-                formControlName="category"
-                class="w-full h-14 px-5 rounded-xl bg-gray-700/40 border-2 border-gray-600 text-white text-lg focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/50 transition-all duration-300 appearance-none"
-                [ngClass]="{'border-red-500/50 focus:border-red-500 focus:ring-red-500/50': eventForm.get('category')?.invalid && eventForm.get('category')?.touched}"
-                required>
-                <option value="" class="bg-gray-800">Select category</option>
-                <option value="CONCERT" class="bg-gray-800">Concert</option>
-                <option value="THEATER" class="bg-gray-800">Theater</option>
-                <option value="SPORTS" class="bg-gray-800">Sports</option>
-                <option value="CONFERENCE" class="bg-gray-800">Conference</option>
-              </select>
-              <div class="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none">
-                <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                </svg>
-              </div>
-            </div>
+            <select
+              id="category"
+              formControlName="category"
+              class="w-full h-14 px-5 rounded-xl bg-gray-700/50 border border-gray-600 text-white text-lg
+                focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500 transition duration-300 appearance-none
+                disabled:opacity-50"
+              [ngClass]="{
+                'border-red-500 focus:border-red-600 focus:ring-red-500': eventForm.get('category')?.invalid && eventForm.get('category')?.touched
+              }"
+              required
+            >
+              <option value="" disabled selected>Select category</option>
+              <option value="CONCERT">Concert</option>
+              <option value="THEATER">Theater</option>
+              <option value="SPORTS">Sports</option>
+              <option value="CONFERENCE">Conference</option>
+            </select>
           </div>
 
-          <!-- Available Seats Input -->
-          <div class="space-y-3">
-            <label for="availableSeats" class="block text-lg font-medium text-gray-200">
-              Available Seats
-              <span class="text-pink-500 ml-1">*</span>
+          <div>
+            <label for="availableSeats" class="block mb-2 text-lg font-semibold text-gray-200">
+              Available Seats <span class="text-pink-500">*</span>
             </label>
             <input
               type="number"
               id="availableSeats"
               formControlName="availableSeats"
               placeholder="Number of seats"
-              class="w-full h-14 px-5 rounded-xl bg-gray-700/40 border-2 border-gray-600 text-white text-lg placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/50 transition-all duration-300"
-              [ngClass]="{'border-red-500/50 focus:border-red-500 focus:ring-red-500/50': eventForm.get('availableSeats')?.invalid && eventForm.get('availableSeats')?.touched}"
               min="1"
-              required>
+              class="w-full h-14 px-5 rounded-xl bg-gray-700/50 border border-gray-600 text-white text-lg placeholder-gray-400
+                focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500 transition duration-300
+                disabled:opacity-50"
+              [ngClass]="{
+                'border-red-500 focus:border-red-600 focus:ring-red-500': eventForm.get('availableSeats')?.invalid && eventForm.get('availableSeats')?.touched
+              }"
+              required
+            />
           </div>
         </div>
 
         <!-- Submit Button -->
-        <div class="pt-6">
+        <div class="pt-8 text-center">
           <button
             type="submit"
-            class="w-full h-14 rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 text-white text-lg font-semibold shadow-lg hover:from-purple-700 hover:to-pink-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:from-purple-600 disabled:hover:to-pink-600 transform hover:-translate-y-0.5"
-            [disabled]="!eventForm.valid">
-            <span class="flex items-center justify-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-              </svg>
-              Create Event
-            </span>
+            [disabled]="eventForm.invalid"
+            class="bg-gradient-to-r from-purple-600 via-pink-600 to-purple-600
+         text-white font-semibold text-lg px-14 py-4 rounded-3xl shadow-lg
+         hover:shadow-2xl hover:scale-[1.05] active:scale-[0.98]
+         transition-transform duration-300 disabled:opacity-50 disabled:cursor-not-allowed
+         w-full max-w-xs mx-auto"
+          >
+            {{ isEditMode ? 'Update Event' : 'Add Event' }}
           </button>
+
         </div>
       </form>
     </div>

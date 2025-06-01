@@ -8,7 +8,7 @@ export interface AppEvent{
   description: string;
   location: string;
   date: string;
-  available_seats: number;
+  availableSeats: number;
   category: string;
 }
 
@@ -27,4 +27,15 @@ private apiUrl = "http://localhost:8080/api/v1/events"
   return this.http.post<Event>(this.apiUrl,event)
   }
 
+  getEventById(id: number): Observable<AppEvent> {
+    return this.http.get<AppEvent>(`${this.apiUrl}/${id}`);
+  }
+
+  updateEvent(id: number, event: AppEvent): Observable<AppEvent> {
+    return this.http.put<AppEvent>(`${this.apiUrl}/${id}`, event);
+  }
+
+  deleteEvent(id: number): Observable<void> {
+    return this.http.delete<void>(`${this.apiUrl}/${id}`);
+  }
 }

@@ -4,6 +4,7 @@ import { RegisterComponent } from './auth/register/register.component';
 import {HomeComponent} from "./core/home/home.component";
 import {authGuard} from "./core/guards/auth.guard";
 import {AddEventComponent} from "./core/event/add-event/add-event.component";
+import {adminGuard} from "./core/guards/admin.guard";
 
 export const routes: Routes = [
 
@@ -11,6 +12,8 @@ export const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'home', component: HomeComponent },
   { path: 'add-event', component: AddEventComponent },
+  { path: 'edit-event/:id', component: AddEventComponent, canActivate: [adminGuard] },
+
 
 
   { path: 'register', component: RegisterComponent },
