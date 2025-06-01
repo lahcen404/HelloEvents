@@ -2,7 +2,7 @@
 
   <div
     class="event-image h-40 bg-cover bg-center rounded-t-xl relative overflow-hidden"
-    [ngStyle]="{ 'background-image': 'url(https://source.unsplash.com/600x400/?' + (event.category || 'event') + ')' }"
+    [ngStyle]="{ 'background-image': 'url(https://images.squarespace-cdn.com/content/v1/57f0719c725e25e914a27b76/1476469701090-IYP1U1RNY0D3M72C5H3A/events-heavenly-header.jpg?format=1500w' + (event.category || 'event') + ')' }"
     [attr.aria-label]="(event.title || 'Event') + ' image'"
   >
     <div class="absolute inset-0 bg-gradient-to-br from-purple-700/30 to-pink-700/30 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
@@ -43,7 +43,7 @@
     <div *ngIf="authService.getRole() === 'ADMIN'" class="flex space-x-4 mt-4">
 
       <button
-        class="flex flex-1 items-center justify-center gap-2 bg-gradient-to-r from-[#7F00FF] to-[#E100FF] hover:from-[#E100FF] hover:to-[#7F00FF] text-white text-sm px-6 py-3 rounded-lg font-semibold shadow-lg
+        class="button-edit flex flex-1 items-center justify-center gap-2 bg-gradient-to-r from-[#7F00FF] to-[#E100FF] hover:from-[#E100FF] hover:to-[#7F00FF] text-white text-sm px-6 py-3 rounded-lg font-semibold shadow-lg
                transition-all duration-300 transform hover:scale-105"
         (click)="onEdit(event)"
       >

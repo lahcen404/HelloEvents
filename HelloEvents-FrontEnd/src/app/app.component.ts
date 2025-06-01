@@ -18,6 +18,7 @@ import {FooterComponent} from "./shared/components/footer/footer.component";
 })
 export class AppComponent {
   isSidebarOpen = false;
+  title: any;
 
   toggleSidebar() {
     this.isSidebarOpen = !this.isSidebarOpen;

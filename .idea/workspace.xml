@@ -5,17 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9429dd6-36f9-450c-8a6a-69d568a81a43" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/tailwind.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/event/add-event/add-event.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/event/add-event/add-event.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/event/add-event/add-event.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/event/add-event/add-event.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloEvents-BackEnd/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-BackEnd/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/java/com/helloevents/helloevents/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/java/com/helloevents/helloevents/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/java/com/helloevents/helloevents/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/java/com/helloevents/helloevents/dto/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/java/com/helloevents/helloevents/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/java/com/helloevents/helloevents/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/app.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/event/event-card/event-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/event/event-card/event-card.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/event/event-card/event-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/event/event-card/event-card.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/event/event-list/event-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/event/event-list/event-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/event/event-list/event-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/event/event-list/event-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/guards/admin.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/guards/admin.guard.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/services/event/event.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/services/event/event.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/models/Event/event.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/models/Event/event.spec.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +195,7 @@
       <workItem from="1748260315038" duration="606000" />
       <workItem from="1748265588756" duration="10973000" />
       <workItem from="1748339833652" duration="1750000" />
-      <workItem from="1748356332791" duration="89965000" />
+      <workItem from="1748356332791" duration="93461000" />
     </task>
     <servers />
   </component>
