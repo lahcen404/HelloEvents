@@ -5,24 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9429dd6-36f9-450c-8a6a-69d568a81a43" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/java/com/helloevents/helloevents/config/OpenApiConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/HelloEvents-FrontEnd.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloEvents-BackEnd/src/test/java/com/helloevents/helloevents/service/EventServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-BackEnd/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-BackEnd/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-BackEnd/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-BackEnd/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/java/com/helloevents/helloevents/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/java/com/helloevents/helloevents/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/java/com/helloevents/helloevents/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/java/com/helloevents/helloevents/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-BackEnd/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/nginx.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/services/user.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/core/services/user.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/shared/components/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/shared/components/navbar/navbar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/shared/components/navbar/navbar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HelloEvents-FrontEnd/src/app/shared/components/navbar/navbar.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +49,8 @@
   "keyToString": {
     "HTTP Request.generated-requests | #3.executor": "Run",
     "HTTP Request.generated-requests | #6.executor": "Run",
+    "JUnit.EventServiceTest.createEvent_shouldSaveAndReturnEvent.executor": "Run",
+    "JUnit.EventServiceTest.createEvent_test.executor": "Run",
     "JUnit.HelloeventsApplicationTests.contextLoads.executor": "Run",
     "JUnit.HelloeventsApplicationTests.executor": "Run",
     "JUnit.HelloeventsApplicationTests.testLoginInvalidCredentials.executor": "Run",
@@ -105,12 +91,44 @@
       <recent name="C:\Users\ENAA\OneDrive\Desktop\ENAA\Spring Boot\HelloEvents" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.HelloeventsApplication">
+  <component name="RunManager" selected="JUnit.EventServiceTest.createEvent_test">
     <configuration name="generated-requests | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" executionIdentifier="#3" index="3" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="generated-requests | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" executionIdentifier="#6" index="6" runType="Run single request">
       <method v="2" />
+    </configuration>
+    <configuration name="EventServiceTest.createEvent_shouldSaveAndReturnEvent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="helloevents" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.helloevents.helloevents.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.helloevents.helloevents.service" />
+      <option name="MAIN_CLASS_NAME" value="com.helloevents.helloevents.service.EventServiceTest" />
+      <option name="METHOD_NAME" value="createEvent_shouldSaveAndReturnEvent" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EventServiceTest.createEvent_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="helloevents" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.helloevents.helloevents.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.helloevents.helloevents.service" />
+      <option name="MAIN_CLASS_NAME" value="com.helloevents.helloevents.service.EventServiceTest" />
+      <option name="METHOD_NAME" value="createEvent_test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="HelloeventsApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="helloevents" />
@@ -123,38 +141,6 @@
       <option name="PACKAGE_NAME" value="com.helloevents.helloevents" />
       <option name="MAIN_CLASS_NAME" value="com.helloevents.helloevents.HelloeventsApplicationTests" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HelloeventsApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="helloevents" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.helloevents.helloevents.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.helloevents.helloevents" />
-      <option name="MAIN_CLASS_NAME" value="com.helloevents.helloevents.HelloeventsApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HelloeventsApplicationTests.testLoginValidCredentials" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="helloevents" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.helloevents.helloevents.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.helloevents.helloevents" />
-      <option name="MAIN_CLASS_NAME" value="com.helloevents.helloevents.HelloeventsApplicationTests" />
-      <option name="METHOD_NAME" value="testLoginValidCredentials" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -173,18 +159,18 @@
     <list>
       <item itemvalue="HTTP Request.generated-requests | #3" />
       <item itemvalue="HTTP Request.generated-requests | #6" />
+      <item itemvalue="JUnit.EventServiceTest.createEvent_shouldSaveAndReturnEvent" />
+      <item itemvalue="JUnit.EventServiceTest.createEvent_test" />
       <item itemvalue="JUnit.HelloeventsApplicationTests" />
-      <item itemvalue="JUnit.HelloeventsApplicationTests.contextLoads" />
-      <item itemvalue="JUnit.HelloeventsApplicationTests.testLoginValidCredentials" />
       <item itemvalue="Spring Boot.HelloeventsApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EventServiceTest.createEvent_test" />
+        <item itemvalue="JUnit.EventServiceTest.createEvent_shouldSaveAndReturnEvent" />
         <item itemvalue="HTTP Request.generated-requests | #6" />
         <item itemvalue="HTTP Request.generated-requests | #3" />
         <item itemvalue="JUnit.HelloeventsApplicationTests" />
-        <item itemvalue="JUnit.HelloeventsApplicationTests.contextLoads" />
-        <item itemvalue="JUnit.HelloeventsApplicationTests.testLoginValidCredentials" />
       </list>
     </recent_temporary>
   </component>
@@ -211,7 +197,7 @@
       <workItem from="1749221747659" duration="44000" />
       <workItem from="1749221797961" duration="25000" />
       <workItem from="1749221833584" duration="464000" />
-      <workItem from="1749222310603" duration="12092000" />
+      <workItem from="1749222310603" duration="16491000" />
     </task>
     <servers />
   </component>
