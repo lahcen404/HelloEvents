@@ -78,7 +78,7 @@ frontend/
 
     * Spring Boot API
     * Angular frontend
-    * MySQL/PostgreSQL database
+    * MySQL database
 
     
 

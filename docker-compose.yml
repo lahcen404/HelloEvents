@@ -1,22 +1,57 @@
-version: '3.8'
 
 services:
+  db:
+    image: mysql:8.0.42
+    container_name: hello-events-db
+    environment:
+      MYSQL_DATABASE: 'eventsdb'
+      MYSQL_USER: 'myuser'
+      MYSQL_PASSWORD: 'yourpassword'
+      MYSQL_ROOT_PASSWORD: 'yourrootpassword'
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
+
   backend:
-    build: ./HelloEvents-BackEnd
+    build:
+      context: ./HelloEvents-BackEnd
+      dockerfile: Dockerfile
+    container_name: hello-events-backend
     ports:
       - "8080:8080"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://hello-events-db:3306/eventsdb?allowPublicKeyRetrieval=true
+      - SPRING_DATASOURCE_USERNAME=myuser
+      - SPRING_DATASOURCE_PASSWORD=yourpassword
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
     networks:
       - app-network
+    depends_on:
+      db:
+        condition: service_healthy
 
   frontend:
-    build: ./HelloEvents-FrontEnd
+    build:
+      context: ./HelloEvents-FrontEnd
+      dockerfile: Dockerfile
+    container_name: hello-events-frontend
     ports:
-      - "3000:80"
-    depends_on:
-      - backend
+      - "80:80"
     networks:
       - app-network
+    depends_on:
+      - backend
 
 networks:
   app-network:
     driver: bridge
+
+volumes:
+  mysql_data:

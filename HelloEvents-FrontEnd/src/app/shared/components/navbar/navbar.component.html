@@ -15,9 +15,13 @@
       </ul>
     </li>
 
+
     <li *ngIf="authService.isLoggedIn()">
-      <a *ngIf="authService.getRole() === 'CUSTOMER'" routerLink="/customer-profile">Customer Profile</a>
-      <a *ngIf="authService.getRole() === 'ADMIN'" routerLink="/admin-profile">Admin Profile</a>
+    <a [routerLink]="['/profile']" class="flex items-center gap-2 hover:underline cursor-pointer">
+      <i class="fas fa-user-circle text-lg"></i>
+      <span class="font-medium">{{ profile?.name }}</span>
+      <span class="text-xs text-gray-400">({{ profile?.role }})</span>
+    </a>
     </li>
 
 

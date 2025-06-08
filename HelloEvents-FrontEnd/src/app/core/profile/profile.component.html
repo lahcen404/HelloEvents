@@ -1,0 +1,89 @@
+<div class="profile-page-container mx-auto max-w-3xl px-4 py-8">
+  <h2 class="mb-8 text-center text-3xl font-bold tracking-tight text-[var(--text-primary)] sm:text-4xl">
+    Profile Information
+  </h2>
+
+  <div *ngIf="errorMessage" class="my-4 rounded-md border border-red-700 bg-red-900/30 p-4 text-center text-red-300">
+     {{ errorMessage }}
+  </div>
+
+  <div *ngIf="!profile && !errorMessage" class="my-10 text-center text-[var(--text-secondary)]">
+    <p>Loading profile information...</p>
+  </div>
+
+  <div *ngIf="profile" class="overflow-hidden rounded-xl bg-[rgba(30,30,50,0.7)] shadow-2xl backdrop-blur-md border border-slate-700/50">
+     <div class="p-6 sm:p-8">
+      <div *ngIf="!isEdit">
+        <dl class="space-y-6">
+          <div>
+            <dt class="text-sm font-medium text-gray-400">Role</dt>
+            <dd class="mt-1 text-lg font-semibold text-white">{{ profile.role }}</dd>
+          </div>
+          <div>
+            <dt class="text-sm font-medium text-gray-400">Email</dt>
+            <dd class="mt-1 text-lg font-semibold text-white">{{ profile.email }}</dd>
+          </div>
+          <div>
+            <dt class="text-sm font-medium text-gray-400">Name</dt>
+            <dd class="mt-1 text-lg font-semibold text-white">{{ profile.name }}</dd>
+          </div>
+        </dl>
+        <div class="mt-8 border-t border-slate-700/50 pt-6">
+          <button
+            (click)="toggleEdit()"
+            type="button"
+            class="w-full rounded-lg bg-[var(--primary-color)] px-6 py-3 text-base font-semibold text-white shadow-md transition-opacity hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-offset-2 focus:ring-offset-[var(--dark-bg)] sm:w-auto">
+            Edit Profile
+          </button>
+        </div>
+      </div>
+
+      <div *ngIf="isEdit">
+        <form (ngSubmit)="saveChanges()" class="space-y-6">
+          <div>
+            <dt class="text-sm font-medium text-gray-400">Role</dt>
+            <dd class="mt-1 text-lg font-semibold text-white">{{ profile.role }}</dd>
+          </div>
+          <div>
+            <dt class="text-sm font-medium text-gray-400">Email</dt>
+            <dd class="mt-1 text-lg font-semibold text-white">{{ profile.email }}</dd>
+          </div>
+
+          <div>
+            <label for="updatedName" class="block text-sm font-medium text-gray-300">Name</label>
+            <div class="mt-1">
+              <input
+                type="text"
+                id="updatedName"
+                name="updatedName"
+                [(ngModel)]="updatedName"
+                class="block w-full rounded-md border-slate-600 bg-[rgba(0,0,0,0.2)] px-4 py-2.5 text-white shadow-sm placeholder:text-gray-500 focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)] sm:text-sm"
+                placeholder="Enter your full name"
+                required
+                #nameInput="ngModel" />
+            </div>
+            <div *ngIf="nameInput.invalid && (nameInput.dirty || nameInput.touched)" class="mt-1 text-xs text-red-400">
+              <span *ngIf="nameInput.errors?.['required']">Name is required.</span>
+            </div>
+          </div>
+
+          <div class="mt-8 flex flex-col gap-4 border-t border-slate-700/50 pt-6 sm:flex-row">
+            <button
+              type="submit"
+              [disabled]="!updatedName?.trim() || nameInput.invalid"
+              class="w-full rounded-lg bg-[var(--primary-color)] px-6 py-3 text-base font-semibold text-white shadow-md transition-opacity hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-offset-2 focus:ring-offset-[var(--dark-bg)] disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto">
+              Save Changes
+            </button>
+            <button
+              type="button"
+              (click)="toggleEdit()"
+              class="w-full rounded-lg border border-slate-600 bg-slate-700 px-6 py-3 text-base font-semibold text-gray-200 shadow-sm hover:bg-slate-600 focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2 focus:ring-offset-[var(--dark-bg)] sm:w-auto">
+
+              Cancel
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

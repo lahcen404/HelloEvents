@@ -5,6 +5,7 @@ import {HomeComponent} from "./core/home/home.component";
 import {authGuard} from "./core/guards/auth.guard";
 import {AddEventComponent} from "./core/event/add-event/add-event.component";
 import {adminGuard} from "./core/guards/admin.guard";
+import {ProfileComponent} from "./core/profile/profile.component";
 
 export const routes: Routes = [
 
@@ -13,6 +14,7 @@ export const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'add-event', component: AddEventComponent },
   { path: 'edit-event/:id', component: AddEventComponent, canActivate: [adminGuard] },
+  { path: 'profile', component: ProfileComponent },
 
 
 

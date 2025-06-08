@@ -1,14 +1,14 @@
-# Use Java 17 (or your Java version)
-FROM openjdk:17-jdk-slim
+                    # Stage 1: Build the application with Maven
+                    FROM maven:3.9-eclipse-temurin-21 AS build
+                    WORKDIR /app
+                    COPY pom.xml .
+                    RUN mvn dependency:go-offline
+                    COPY src ./src
+                    RUN mvn package -DskipTests
 
-# Set working directory inside container
-WORKDIR /app
-
-# Copy the JAR file (adjust the name if different)
-COPY target/*.jar app.jar
-
-# Expose port 8080 (default Spring Boot port)
-EXPOSE 8080
-
-# Run the application
-CMD ["java", "-jar", "app.jar"]
+                    # Stage 2: Create the final, small image
+                    FROM openjdk:21-slim
+                    WORKDIR /app
+                    COPY --from=build /app/target/*.jar app.jar
+                    EXPOSE 8080
+                    ENTRYPOINT ["java", "-jar", "app.jar"]
